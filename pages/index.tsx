@@ -36,14 +36,14 @@ const Home = ({
       <Header />
       <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16">
         <section className="md:space-y-24">
-          <Row title="Trending Now" projects={trendingNow} />
-          <Row title="Top Rated" projects={topRated} />
-          <Row title="Action Thrillers" projects={actionMovies} />
+          <Row title="Nuestros Favorito" projects={trendingNow} />
+          <Row title="Despegando" projects={topRated} />
+          <Row title="Más recientes" projects={actionMovies} />
 
-          <Row title="Comedies" projects={comedyMovies} />
-          <Row title="Scary Movies" projects={horrorMovies} />
-          <Row title="Romance Movies" projects={romanceMovies} />
-          <Row title="Documentaries" projects={documentaries} />
+          <Row title="Ingeniería" projects={comedyMovies} />
+          <Row title="Informática" projects={horrorMovies} />
+          <Row title="Arte" projects={romanceMovies} />
+          <Row title="Diseño" projects={documentaries} />
         </section>
       </main>
     </div>

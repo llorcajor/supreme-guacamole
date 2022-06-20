@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Header from "../../components/Header";
 import ProjectBanner from "../../components/ProjectBanner";
-import ProjectFeed from "../../components/ProjectFeed";
+
+import ProjectNavbar from "../../components/ProjectNavbar";
 
 const ProjectPage = () => {
   return (
@@ -12,7 +13,7 @@ const ProjectPage = () => {
       </Head>
       <Header />
       <ProjectBanner />
-      <ProjectFeed />
+      <ProjectNavbar />
     </div>
   );
 };

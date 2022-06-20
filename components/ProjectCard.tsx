@@ -8,7 +8,7 @@ interface Props {
 
 const ProjectCard = ({ project }: Props) => {
   return (
-    <div className=" flex flex-col items-start min-w-[200px] cursor-pointer transition duration-200 ease-out md:min-w-[260px] md:hover:scale-105">
+    <div className=" flex flex-col items-start min-w-[200px] cursor-pointer transition duration-200 ease-out md:min-w-[260px] md:hover:scale-105 mt-5">
       <Image
         src={`https://image.tmdb.org/t/p/w500${
           project.backdrop_path || project.poster_path
