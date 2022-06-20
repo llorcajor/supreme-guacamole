@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ProjectCard from "../components/ProjectCard";
 import Row from "../components/Row";
@@ -46,6 +47,7 @@ const Home = ({
           <Row title="Diseño" projects={documentaries} />
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
