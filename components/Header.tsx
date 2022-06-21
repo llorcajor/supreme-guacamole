@@ -1,18 +1,11 @@
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import useAuth from "../hooks/useAuth";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon, SearchIcon } from "@heroicons/react/outline";
+import Image from "next/image";
 
 const Header = () => {
-  const navigation = [
-    { name: "Descubrir", href: "#", current: false },
-    { name: "Crear un proyecto", href: "#", current: true },
-  ];
-
   return (
-    <Disclosure as="nav" className="bg-gray-800 z-50">
+    <Disclosure as="nav" className="bg-white z-50 border-b-2 shadow-sm">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -30,32 +23,29 @@ const Header = () => {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                    alt="Workflow"
-                  />
-                  <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                    alt="Workflow"
-                  />
+                  <a href="/" className="block w-auto">
+                    <Image
+                      src="/Logo.png"
+                      alt="Workflow"
+                      width={40}
+                      height={40}
+                    />
+                  </a>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={`${
-                          item.current
-                            ? "bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                        } `}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
+                    <a
+                      href="#"
+                      className=" text-black hover:underline decoration-[#FC307C] px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Descubrir
+                    </a>
+                    <a
+                      href="#"
+                      className="text-black hover:underline decoration-[#FC307C] px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Crear un proyecto
+                    </a>
                   </div>
                 </div>
               </div>
@@ -128,23 +118,9 @@ const Header = () => {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={`
-                    ${
-                      item.current
-                        ? "bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    } 
-                  `}
-                  aria-current={item.current ? "page" : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
+              <Disclosure.Button className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                Perfil
+              </Disclosure.Button>
             </div>
           </Disclosure.Panel>
         </>
