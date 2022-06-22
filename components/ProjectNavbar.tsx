@@ -14,14 +14,14 @@ const ProjectNavbar = () => {
 
   return (
     <>
-      <div className="w-full px-2 py-16 sm:px-0">
+      <div className="w-full px-2 py-16 sm:px-0 ">
         <Tab.Group>
-          <Tab.List className="flex space-x-1 rounded-xl bg-blue-900 p-1">
+          <Tab.List className="flex space-x-1 p-1 border-2 ">
             <Tab
               className={({ selected }) =>
                 selected
-                  ? "bg-white shadow w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
-                  : "text-blue-100 hover:bg-white/[0.12] hover:text-white w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                  ? "w-full py-2.5 text-sm font-medium focus:underline"
+                  : "hover:bg-white/[0.12] w-full py-2.5 text-sm font-medium"
               }
             >
               Inicio
@@ -29,8 +29,8 @@ const ProjectNavbar = () => {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? "bg-white shadow w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
-                  : "text-blue-100 hover:bg-white/[0.12] hover:text-white w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                  ? "w-full py-2.5 text-sm font-medium focus:underline"
+                  : "hover:bg-white/[0.12] w-full py-2.5 text-sm font-medium"
               }
             >
               Preguntas frecuentes
@@ -38,8 +38,8 @@ const ProjectNavbar = () => {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? "bg-white shadow w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
-                  : "text-blue-100 hover:bg-white/[0.12] hover:text-white w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                  ? "w-full py-2.5 text-sm font-medium focus:underline"
+                  : "hover:bg-white/[0.12] w-full py-2.5 text-sm font-medium"
               }
             >
               Actualizaciones
@@ -47,8 +47,8 @@ const ProjectNavbar = () => {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? "bg-white shadow w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
-                  : "text-blue-100 hover:bg-white/[0.12] hover:text-white w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                  ? "w-full py-2.5 text-sm font-medium focus:underline"
+                  : "hover:bg-white/[0.12] w-full py-2.5 text-sm font-medium"
               }
             >
               Comentarios
@@ -56,8 +56,8 @@ const ProjectNavbar = () => {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? "bg-white shadow w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
-                  : "text-blue-100 hover:bg-white/[0.12] hover:text-white w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                  ? "w-full py-2.5 text-sm font-medium focus:underline"
+                  : "hover:bg-white/[0.12] w-full py-2.5 text-sm font-medium"
               }
             >
               Equipo

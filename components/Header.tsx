@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon, SearchIcon } from "@heroicons/react/outline";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -34,18 +35,16 @@ const Header = () => {
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
-                    <a
-                      href="#"
-                      className=" text-black hover:underline decoration-[#FC307C] px-3 py-2 rounded-md text-sm font-medium"
-                    >
-                      Descubrir
-                    </a>
-                    <a
-                      href="#"
-                      className="text-black hover:underline decoration-[#FC307C] px-3 py-2 rounded-md text-sm font-medium"
-                    >
-                      Crear un proyecto
-                    </a>
+                    <Link href="/">
+                      <a className=" text-black hover:underline decoration-[#FC307C] px-3 py-2 rounded-md text-sm font-medium">
+                        Descubrir
+                      </a>
+                    </Link>
+                    <Link href="#">
+                      <a className="text-black hover:underline decoration-[#FC307C] px-3 py-2 rounded-md text-sm font-medium">
+                        Crear un proyecto
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
